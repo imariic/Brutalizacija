@@ -1,7 +1,17 @@
 import avatars from "../assets";
 
 const characters = [
-  { name: "Hambi", avatar: avatars.hambi, sounds: [] },
+  {
+    name: "Hambi",
+    avatar: avatars.hambi,
+    sounds: [
+      { title: "To ti je tak Ivanka", fileName: "hambi_doktor" },
+      { title: "Gosponu se jako zuri", fileName: "hambi_gospon" },
+      { title: "Hahahahah", fileName: "hambi_haha" },
+      { title: "McDonald's", fileName: "hambi_mcdonalds" },
+      { title: "Sta se smijes?", fileName: "hambi_sta_se_smijes" },
+    ],
+  },
   {
     name: "Mamic",
     avatar: avatars.mamic,
@@ -17,7 +27,18 @@ const characters = [
     ],
   },
   { name: "Vuco", avatar: avatars.vuco, sounds: [] },
-  { name: "Zorz", avatar: avatars.zorz, sounds: [] },
+  {
+    name: "Zorz",
+    avatar: avatars.zorz,
+    sounds: [
+      { title: "Ciganin", fileName: "zorz_ciganin" },
+      { title: "Ciro", fileName: "zorz_ciro" },
+      { title: "Hahahahah", fileName: "zorz_haha" },
+      { title: "Kasa", fileName: "zorz_kasa" },
+      { title: "Krava i stala", fileName: "zorz_krava" },
+      { title: "Obama", fileName: "zorz_obama" },
+    ],
+  },
 ];
 
 export default characters;
