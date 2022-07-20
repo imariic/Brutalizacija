@@ -11,9 +11,9 @@ export const Container = styled.View`
   padding: 8px;
 `;
 
-export const Play = ({ onPlay }) => (
+export const Play = ({ onPlay, isPlaying }) => (
   <TouchableOpacity onPress={onPlay}>
-    <Icon size={24} name="play" />
+    <Icon size={24} name={isPlaying ? "pause" : "play"} />
   </TouchableOpacity>
 );
 

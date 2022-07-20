@@ -13,7 +13,15 @@ const MainNavigator = () => {
         name="Home"
         component={HomeScreen}
       />
-      <Stack.Screen name="Sounds" component={SoundsScreen} />
+      <Stack.Screen
+        name="Sounds"
+        component={SoundsScreen}
+        options={{
+          title: "",
+          headerStyle: { backgroundColor: "#145334" },
+          headerTintColor: "#ffd700",
+        }}
+      />
     </Stack.Navigator>
   );
 };
