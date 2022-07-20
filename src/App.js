@@ -1,7 +1,8 @@
+import "react-native-gesture-handler";
 import React from "react";
-import { View, Button } from "react-native";
 import Sound from "react-native-sound";
-import Character from "./components/character/Character";
+import { NavigationContainer } from "@react-navigation/native";
+import MainNavigator from "../src/navigator";
 
 Sound.setCategory("Playback");
 
@@ -16,21 +17,9 @@ sound.setVolume(1);
 
 const App = () => {
   return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Button
-        title="AMIGOO"
-        onPress={(event) => {
-          sound.play((success) => {
-            if (success) {
-              console.log("successfully finished playing");
-            } else {
-              console.log("playback failed due to audio decoding errors");
-            }
-          });
-        }}
-      />
-      <Character />
-    </View>
+    <NavigationContainer>
+      <MainNavigator />
+    </NavigationContainer>
   );
 };
 

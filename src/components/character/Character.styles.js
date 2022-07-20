@@ -5,6 +5,8 @@ export const Container = styled.TouchableOpacity`
   width: 300px;
   height: 500px;
   align-items: center;
+  border-radius: 8px;
+  overflow: hidden;
 `;
 
 export const Avatar = styled.Image`

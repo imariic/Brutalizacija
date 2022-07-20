@@ -1,10 +1,12 @@
+import { useNavigation } from "@react-navigation/native";
 import React from "react";
 import avatars from "../../assets";
 import { Container, Avatar, Title, Gradient } from "./Character.styles";
 
 const Character = () => {
+  const navigation = useNavigation();
   return (
-    <Container>
+    <Container onPress={() => navigation.navigate("Sounds")}>
       <Avatar source={avatars.hambi} />
       <Gradient
         start={{ x: 0.0, y: 0.25 }}
