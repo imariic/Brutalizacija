@@ -26,7 +26,18 @@ const characters = [
       { title: "Lazov", fileName: "mamic_lazov" },
     ],
   },
-  { name: "Vuco", avatar: avatars.vuco, sounds: [] },
+  {
+    name: "Vuco",
+    avatar: avatars.vuco,
+    sounds: [
+      { title: "Pun sam oruzja", fileName: "vuco_dracevac" },
+      { title: "Krscanin", fileName: "vuco_krscanin" },
+      { title: "Laugreano", fileName: "vuco_laugreano" },
+      { title: "Lepeza", fileName: "vuco_lepeza" },
+      { title: "Oklopno vozilo", fileName: "vuco_oklopno" },
+      { title: "Smrade", fileName: "vuco_smrad" },
+    ],
+  },
   {
     name: "Zorz",
     avatar: avatars.zorz,
