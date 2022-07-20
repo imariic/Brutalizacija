@@ -1,11 +1,11 @@
 import React from "react";
 import { Container, Play, Title } from "./Sound.styles";
 
-const Sound = () => {
+const Sound = ({ title }) => {
   return (
     <Container>
       <Play />
-      <Title />
+      <Title>{title}</Title>
     </Container>
   );
 };

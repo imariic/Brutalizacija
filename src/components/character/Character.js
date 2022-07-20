@@ -5,7 +5,9 @@ import { Container, Avatar, Title, Gradient } from "./Character.styles";
 const Character = ({ name, avatar }) => {
   const navigation = useNavigation();
   return (
-    <Container onPress={() => navigation.navigate("Sounds")}>
+    <Container
+      onPress={() => navigation.navigate("Sounds", { charName: name })}
+    >
       <Avatar source={avatar} />
       <Gradient
         start={{ x: 0.0, y: 0.25 }}
