@@ -3,9 +3,10 @@ import styled from "styled-components";
 
 export const Container = styled.TouchableOpacity`
   width: 300px;
-  height: 500px;
+  height: 400px;
   align-items: center;
   border-radius: 8px;
+  margin-bottom: 24px;
   overflow: hidden;
 `;
 
