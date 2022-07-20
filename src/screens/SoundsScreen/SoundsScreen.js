@@ -1,8 +1,13 @@
 import React from "react";
 import Screen from "../../components/screen/Screen";
+import SoundList from "../../components/soundList/SoundList";
 
 const SoundsScreen = () => {
-  return <Screen></Screen>;
+  return (
+    <Screen>
+      <SoundList />
+    </Screen>
+  );
 };
 
 export default SoundsScreen;
