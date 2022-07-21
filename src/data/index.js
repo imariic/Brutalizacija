@@ -16,6 +16,7 @@ const characters = [
     name: "Mamic",
     avatar: avatars.mamic,
     sounds: [
+      { title: "Ajmoooo", fileName: "mamic_ajmo" },
       { title: "Djubre", fileName: "mamic_djubre" },
       { title: "Nabijem te na kurac", fileName: "mamic_nabijem" },
       { title: "Nemas to pravo", fileName: "mamic_nemas_to_pravo" },
