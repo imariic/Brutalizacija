@@ -17,8 +17,8 @@ const Sound = ({ title, fileName }) => {
   const handlePlay = () => sound.play();
 
   return (
-    <Container>
-      <Play onPlay={handlePlay} isPlaying={sound.isPlaying()} />
+    <Container onPress={handlePlay}>
+      <Play isPlaying={sound.isPlaying()} />
       <Title>{title}</Title>
     </Container>
   );

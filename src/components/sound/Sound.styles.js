@@ -1,9 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import Icon from "react-native-vector-icons/FontAwesome5";
-import { TouchableOpacity } from "react-native-gesture-handler";
 
-export const Container = styled.View`
+export const Container = styled.TouchableOpacity`
   flex-direction: row;
   align-items: center;
   background-color: #ffd700;
@@ -11,10 +10,8 @@ export const Container = styled.View`
   padding: 8px;
 `;
 
-export const Play = ({ onPlay, isPlaying }) => (
-  <TouchableOpacity onPress={onPlay}>
-    <Icon size={24} name={isPlaying ? "pause" : "play"} />
-  </TouchableOpacity>
+export const Play = ({ isPlaying }) => (
+  <Icon size={24} name={isPlaying ? "pause" : "play"} />
 );
 
 export const Title = styled.Text`
