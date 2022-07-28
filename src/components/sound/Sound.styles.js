@@ -11,7 +11,7 @@ export const Container = styled.TouchableOpacity`
   padding: 8px;
 `;
 
-export const Play = () => <Icon size={24} name="play" />;
+export const Play = () => <Icon size={32} name="play" />;
 
 export const Title = styled.Text`
   margin-left: ${dimensions.small}px;

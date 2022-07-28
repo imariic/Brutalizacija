@@ -12,11 +12,12 @@ const Sound = ({ title, fileName }) => {
     }
   });
 
-  sound.setVolume(20);
+  sound.setVolume(1);
 
   useEffect(() => {
     return () => {
       sound.stop();
+      sound.release();
     };
   }, []);
 
