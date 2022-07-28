@@ -1,7 +1,7 @@
 import React from "react";
-import { FlatList } from "react-native";
-import Sound from "../sound/Sound";
-import characters from "../../data";
+import { Sound } from "+/components";
+import characters from "+/data";
+import { SoundsFlatList } from "./SoundList.styles";
 
 const SoundList = ({ charName }) => {
   const data = characters.find((char) => char.name === charName).sounds;
@@ -13,8 +13,7 @@ const SoundList = ({ charName }) => {
   const keyExtractor = (item) => item.title;
 
   return (
-    <FlatList
-      style={{ width: "100%", marginTop: 24 }}
+    <SoundsFlatList
       data={data}
       renderItem={renderItem}
       keyExtractor={keyExtractor}

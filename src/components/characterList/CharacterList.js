@@ -1,7 +1,7 @@
 import React from "react";
 import { FlatList } from "react-native";
-import Character from "../character/Character";
-import characters from "../../data";
+import characters from "+/data";
+import { Character } from "+/components";
 
 const CharacterList = () => {
   const renderItem = ({ item }) => {

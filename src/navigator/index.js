@@ -1,11 +1,16 @@
 import React from "react";
-import HomeScreen from "../screens/Home/HomeScreen";
-import SoundsScreen from "../screens/SoundsScreen/SoundsScreen";
+import { HomeScreen, SoundsScreen } from "+/screens";
 import { createStackNavigator } from "@react-navigation/stack";
 
 const Stack = createStackNavigator();
 
 const MainNavigator = () => {
+  const navigatorOptions = {
+    title: "",
+    headerStyle: { backgroundColor: "#145334" },
+    headerTintColor: "#ffd700",
+  };
+
   return (
     <Stack.Navigator>
       <Stack.Screen
@@ -16,11 +21,7 @@ const MainNavigator = () => {
       <Stack.Screen
         name="Sounds"
         component={SoundsScreen}
-        options={{
-          title: "",
-          headerStyle: { backgroundColor: "#145334" },
-          headerTintColor: "#ffd700",
-        }}
+        options={navigatorOptions}
       />
     </Stack.Navigator>
   );

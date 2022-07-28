@@ -1,7 +1,6 @@
 import React from "react";
 import { useRoute } from "@react-navigation/native";
-import Screen from "../../components/screen/Screen";
-import SoundList from "../../components/soundList/SoundList";
+import { Screen, SoundList } from "+/components";
 
 const SoundsScreen = () => {
   const route = useRoute();

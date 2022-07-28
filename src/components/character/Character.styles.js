@@ -1,12 +1,13 @@
 import LinearGradient from "react-native-linear-gradient";
 import styled from "styled-components";
+import { dimensions } from "+/constants";
 
 export const Container = styled.TouchableOpacity`
   width: 300px;
   height: 400px;
   align-items: center;
-  border-radius: 8px;
-  margin-bottom: 24px;
+  border-radius: ${dimensions.small}px;
+  margin-bottom: ${dimensions.large}px;
   overflow: hidden;
 `;
 
@@ -18,12 +19,17 @@ export const Avatar = styled.Image`
 export const Title = styled.Text`
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 32px;
-  margin-top: 16px;
+  font-size: ${dimensions.xlarge}px;
+  margin-top: ${dimensions.xmedium}px;
   color: rgba(7, 110, 247, 0.7);
 `;
 
-export const Gradient = styled(LinearGradient)`
+export const Gradient = styled(LinearGradient).attrs({
+  start: { x: 0.0, y: 0.25 },
+  end: { x: 0.5, y: 1.0 },
+  locations: [0, 0.5, 0.6],
+  colors: ["#FFD700", "#FFC72C", "#FEBE10"],
+})`
   width: 100%;
   height: 20%;
   align-items: center;

@@ -1,6 +1,5 @@
 import React from "react";
-import CharacterList from "../../components/characterList/CharacterList";
-import Screen from "../../components/screen/Screen";
+import { CharacterList, Screen } from "+/components";
 import { Title } from "./HomeScreen.styles";
 
 const HomeScreen = () => {
