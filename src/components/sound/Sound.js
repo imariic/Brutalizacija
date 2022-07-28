@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import RNSound from "react-native-sound";
 import { Container, Play, Title } from "./Sound.styles";
 
@@ -13,6 +13,12 @@ const Sound = ({ title, fileName }) => {
   });
 
   sound.setVolume(20);
+
+  useEffect(() => {
+    return () => {
+      sound.stop();
+    };
+  }, []);
 
   const handlePlay = () => sound.play();
 
