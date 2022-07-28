@@ -5,4 +5,5 @@ export const dimensions = {
   xmedium: 16,
   large: 24,
   xlarge: 32,
+  xxlarge: 36,
 };
