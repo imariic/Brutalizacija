@@ -40,6 +40,19 @@ const characters = [
     ],
   },
   {
+    name: "Zoki",
+    avatar: avatars.zoki,
+    sounds: [
+      { title: "Gojenac", fileName: "zoki_gojenac" },
+      { title: "Herojski zec", fileName: "zoki_herojski_zec" },
+      { title: "Karabin", fileName: "zoki_karabin" },
+      { title: "Kokain", fileName: "zoki_kokain" },
+      { title: "Pile", fileName: "zoki_pile" },
+      { title: "Ponavljač", fileName: "zoki_ponavljac" },
+      { title: "Švicarski sir", fileName: "zoki_svicarski_sir" },
+    ],
+  },
+  {
     name: "Žorž",
     avatar: avatars.zorz,
     sounds: [
